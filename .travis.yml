@@ -1,0 +1,15 @@
+language: ruby
+
+rvm:
+- 2.3
+- 2.2
+- 2.1
+
+script: "rails test"
+
+addons:
+  code_climate:
+    repo_token: 3ab189ce7133c7b2f64114a2c8e174487e86045a0d0d928c94e680c099639c1a
+# regular test configuration
+after_success:
+  - bundle exec codeclimate-test-reporter
