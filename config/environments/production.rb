@@ -91,7 +91,7 @@ Rails.application.configure do
   
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = 'guarded-cove-34448.herokuapp.com'
+  host = 'cryptic-fjord-47812.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
     :address        => 'smtp.sendgrid.net',
