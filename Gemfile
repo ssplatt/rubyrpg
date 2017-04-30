@@ -32,9 +32,6 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'capistrano-rails', group: :development
 
 gem 'bootstrap-sass'
-
-gem 'faker'
-
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 
@@ -46,6 +43,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13.0'
   gem 'selenium-webdriver'
+  gem 'faker'
 end
 
 group :development do
