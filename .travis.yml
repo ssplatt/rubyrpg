@@ -3,7 +3,9 @@ language: ruby
 rvm:
 - 2.3.0
 
-script: "rails test"
+script:
+- "rails db:migrate"
+- "bin/rails test"
 
 addons:
   code_climate:
